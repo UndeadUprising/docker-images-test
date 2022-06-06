@@ -5,7 +5,8 @@ LABEL author="Classixz" maintainer="classixz@undeaduprising.net"
 USER root
 
 RUN apt update && apt upgrade -y \
-				&& apt install -y python3.9 python-dev unzip 
+				&& apt install -y python3.9 python-dev unzip \
+				&& apt-cache policy python3.9
 
 COPY checkupdater.sh /checkupdater.sh
 COPY GameLogServer.sh /GameLogServer.sh
