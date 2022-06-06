@@ -5,9 +5,11 @@ LABEL author="Classixz" maintainer="classixz@undeaduprising.net"
 USER root
 
 COPY checkupdater.sh /checkupdater.sh
+COPY GameLogServer.sh /GameLogServer.sh
 
 #Make sure the script is executable by anyone
 RUN chmod ugo+x /checkupdater.sh
+RUN chmod ugo+x /GameLogServer.sh
 
 ENV  USER=container HOME=/home/container/
 USER container
