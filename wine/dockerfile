@@ -1,0 +1,20 @@
+FROM ubuntu:focal
+
+LABEL author="Classixz" maintainer="classixz@undeaduprising.net"
+
+ENV WINEDEBUG=fixme-all
+ENV WINEARCH=win64
+ENV WINEPREFIX=/home/container/.wine
+
+COPY installwine.sh /installwine.sh
+RUN chmod +x /installwine.sh 
+RUN /installwine.sh && rm /installwine.sh
+
+RUN adduser --disabled-password --gecos "" --home /home/container container
+ENV USER=container HOME=/home/container
+USER container
+WORKDIR /home/container
+
+COPY entrypoint.sh /entrypoint.sh
+
+CMD ["/bin/bash", "/entrypoint.sh"]
