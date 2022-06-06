@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Downloading GameLogServer"
 
-sudo apt install -y python3.9 python-dev unzip
-sudo apt-cache policy python3.9
+apt install -y python3.9 python-dev unzip
+apt-cache policy python3.9
 python3.9 --version
 
 if [ ! -d /home/container/GameLogServer ]; then
