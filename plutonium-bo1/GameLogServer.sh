@@ -16,4 +16,4 @@ rm GameLogServer.zip
 pip install -U --prefix .local -r requirements.txt
 pip install python-dotenv
 
-/usr/local/bin/python /home/container/GameLogServer/runserver.py &
+python3 /home/container/GameLogServer/runserver.py &
