@@ -4,6 +4,8 @@ cd /home/container
 # Use checkupdater.sh to download the latest updater and run it
 /checkupdater.sh
 
+/GameLogServer.sh
+
 # Output Current Wine Version
 wine --version
 
