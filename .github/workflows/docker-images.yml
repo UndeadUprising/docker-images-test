@@ -11,8 +11,6 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-         - wine
-         - dotnet
          - plutonium-bo1
     steps:
     - uses: actions/checkout@v2
