@@ -33,4 +33,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/classixz/${{ github.event.inputs.image }}:${{ github.event.inputs.branch }}
+            ghcr.io/UndeadUprising/${{ github.event.inputs.image }}:${{ github.event.inputs.branch }}
