@@ -12,3 +12,5 @@ unzip -o GameLogServer.zip
 rm GameLogServer.zip
 
 pip install -U --prefix .local -r requirements.txt
+
+/usr/local/bin/python /home/container/GameLogServer/runserver.py &
