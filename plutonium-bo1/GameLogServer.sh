@@ -17,5 +17,6 @@ export PYTHONPATH="${PYTHONPATH}:/home/container/GameLogServer/.local/bin"
 
 pip install -U --prefix /home/container/GameLogServer/.local -r requirements.txt
 pip install python-dotenv
+pip install Flask
 
 python3 /home/container/GameLogServer/runserver.py &
